@@ -1,0 +1,59 @@
+{
+  "ALLERGY": [
+    "alahan",
+    "allergy",
+    "allergies",
+    "allergic"
+  ],
+  "MEDICATION": [
+    "ubat",
+    "medicine",
+    "medication",
+    "pill",
+    "pills",
+    "pil",
+    "tablet",
+    "tablets"
+  ],
+  "DOSAGE": [
+    "dos",
+    "dose",
+    "dosage",
+    "mg",
+    "ml",
+    "biji"
+  ],
+  "BREATHING": [
+    "bernafas",
+    "nafas",
+    "susah nafas",
+    "sesak nafas",
+    "breathing",
+    "breathe"
+  ],
+  "CHEST_PAIN": [
+    "sakit dada",
+    "chest pain"
+  ],
+  "FEVER": [
+    "demam",
+    "fever"
+  ],
+  "COUGH": [
+    "batuk",
+    "cough"
+  ],
+  "FLU": [
+    "selesema",
+    "flu",
+    "influenza"
+  ],
+  "EMERGENCY": [
+    "kecemasan",
+    "emergency"
+  ],
+  "BLOOD_PRESSURE": [
+    "tekanan darah",
+    "blood pressure"
+  ]
+}
