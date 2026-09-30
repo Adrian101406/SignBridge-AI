@@ -1,0 +1,470 @@
+{
+    "0": {
+        "gloss": "abang",
+        "english": "older brother"
+    },
+    "1": {
+        "gloss": "ada",
+        "english": "have / there is"
+    },
+    "2": {
+        "gloss": "adik_lelaki",
+        "english": "younger brother"
+    },
+    "3": {
+        "gloss": "adik_perempuan",
+        "english": "younger sister"
+    },
+    "4": {
+        "gloss": "air",
+        "english": "water"
+    },
+    "5": {
+        "gloss": "ambil",
+        "english": "take"
+    },
+    "6": {
+        "gloss": "anak",
+        "english": "child"
+    },
+    "7": {
+        "gloss": "anak_lelaki",
+        "english": "son"
+    },
+    "8": {
+        "gloss": "anak_perempuan",
+        "english": "daughter"
+    },
+    "9": {
+        "gloss": "apa",
+        "english": "what"
+    },
+    "10": {
+        "gloss": "apa_khabar",
+        "english": "how are you"
+    },
+    "11": {
+        "gloss": "arah",
+        "english": "direction"
+    },
+    "12": {
+        "gloss": "assalamualaikum",
+        "english": "peace be upon you (greeting)"
+    },
+    "13": {
+        "gloss": "awak",
+        "english": "you"
+    },
+    "14": {
+        "gloss": "ayah",
+        "english": "father"
+    },
+    "15": {
+        "gloss": "baca",
+        "english": "read"
+    },
+    "16": {
+        "gloss": "bagaimana",
+        "english": "how"
+    },
+    "17": {
+        "gloss": "bahasa_isyarat",
+        "english": "sign language"
+    },
+    "18": {
+        "gloss": "baik",
+        "english": "good / fine"
+    },
+    "19": {
+        "gloss": "baik_2",
+        "english": "good / fine"
+    },
+    "20": {
+        "gloss": "bapa_saudara",
+        "english": "uncle"
+    },
+    "21": {
+        "gloss": "bas",
+        "english": "bus"
+    },
+    "22": {
+        "gloss": "bawa",
+        "english": "bring / carry"
+    },
+    "23": {
+        "gloss": "belajar",
+        "english": "study / learn"
+    },
+    "24": {
+        "gloss": "beli",
+        "english": "buy"
+    },
+    "25": {
+        "gloss": "beli_2",
+        "english": "buy"
+    },
+    "26": {
+        "gloss": "berapa",
+        "english": "how much / how many"
+    },
+    "27": {
+        "gloss": "berjalan",
+        "english": "walk"
+    },
+    "28": {
+        "gloss": "berlari",
+        "english": "run"
+    },
+    "29": {
+        "gloss": "bila",
+        "english": "when"
+    },
+    "30": {
+        "gloss": "bola",
+        "english": "ball"
+    },
+    "31": {
+        "gloss": "boleh",
+        "english": "can / may"
+    },
+    "32": {
+        "gloss": "bomba",
+        "english": "firefighter / fire brigade"
+    },
+    "33": {
+        "gloss": "buang",
+        "english": "throw away / dispose"
+    },
+    "34": {
+        "gloss": "buat",
+        "english": "do / make"
+    },
+    "35": {
+        "gloss": "cuaca",
+        "english": "weather"
+    },
+    "36": {
+        "gloss": "curi",
+        "english": "steal"
+    },
+    "37": {
+        "gloss": "dapat",
+        "english": "get / obtain"
+    },
+    "38": {
+        "gloss": "dari",
+        "english": "from"
+    },
+    "39": {
+        "gloss": "datuk",
+        "english": "grandfather"
+    },
+    "40": {
+        "gloss": "duit",
+        "english": "money"
+    },
+    "41": {
+        "gloss": "emak",
+        "english": "mother"
+    },
+    "42": {
+        "gloss": "emak_saudara",
+        "english": "aunt"
+    },
+    "43": {
+        "gloss": "esok",
+        "english": "tomorrow"
+    },
+    "44": {
+        "gloss": "gambar",
+        "english": "picture / photo"
+    },
+    "45": {
+        "gloss": "hari",
+        "english": "day"
+    },
+    "46": {
+        "gloss": "hi",
+        "english": "hi"
+    },
+    "47": {
+        "gloss": "hilang_habis",
+        "english": "lost / finished"
+    },
+    "48": {
+        "gloss": "hospital",
+        "english": "hospital"
+    },
+    "49": {
+        "gloss": "hujan",
+        "english": "rain"
+    },
+    "50": {
+        "gloss": "jahat",
+        "english": "evil / bad (person)"
+    },
+    "51": {
+        "gloss": "jalan",
+        "english": "road / walk"
+    },
+    "52": {
+        "gloss": "jam",
+        "english": "clock / hour"
+    },
+    "53": {
+        "gloss": "jangan",
+        "english": "do not"
+    },
+    "54": {
+        "gloss": "jumpa",
+        "english": "meet"
+    },
+    "55": {
+        "gloss": "kacau",
+        "english": "disturb / bother"
+    },
+    "56": {
+        "gloss": "kafetaria",
+        "english": "cafeteria"
+    },
+    "57": {
+        "gloss": "kakak",
+        "english": "older sister"
+    },
+    "58": {
+        "gloss": "kedai",
+        "english": "shop / store"
+    },
+    "59": {
+        "gloss": "keluarga",
+        "english": "family"
+    },
+    "60": {
+        "gloss": "kereta",
+        "english": "car"
+    },
+    "61": {
+        "gloss": "keretapi",
+        "english": "train"
+    },
+    "62": {
+        "gloss": "kesakitan",
+        "english": "pain / suffering"
+    },
+    "63": {
+        "gloss": "khabar_baik",
+        "english": "good news / I am fine"
+    },
+    "64": {
+        "gloss": "lelaki",
+        "english": "man / male"
+    },
+    "65": {
+        "gloss": "lemak",
+        "english": "fat / grease"
+    },
+    "66": {
+        "gloss": "lupa",
+        "english": "forget"
+    },
+    "67": {
+        "gloss": "main",
+        "english": "play"
+    },
+    "68": {
+        "gloss": "makan",
+        "english": "eat"
+    },
+    "69": {
+        "gloss": "mana",
+        "english": "where / which"
+    },
+    "70": {
+        "gloss": "marah",
+        "english": "angry"
+    },
+    "71": {
+        "gloss": "marah_2",
+        "english": "angry"
+    },
+    "72": {
+        "gloss": "mari",
+        "english": "come"
+    },
+    "73": {
+        "gloss": "mari_2",
+        "english": "come"
+    },
+    "74": {
+        "gloss": "masa",
+        "english": "time"
+    },
+    "75": {
+        "gloss": "masalah",
+        "english": "problem"
+    },
+    "76": {
+        "gloss": "minum",
+        "english": "drink"
+    },
+    "77": {
+        "gloss": "mohon",
+        "english": "request / plead / apply"
+    },
+    "78": {
+        "gloss": "mohon_2",
+        "english": "request / apply"
+    },
+    "79": {
+        "gloss": "nama",
+        "english": "name"
+    },
+    "80": {
+        "gloss": "nasi",
+        "english": "rice (cooked)"
+    },
+    "81": {
+        "gloss": "nasi_lemak",
+        "english": "nasi lemak (coconut rice dish)"
+    },
+    "82": {
+        "gloss": "nenek",
+        "english": "grandmother"
+    },
+    "83": {
+        "gloss": "panas",
+        "english": "hot"
+    },
+    "84": {
+        "gloss": "panas_2",
+        "english": "hot"
+    },
+    "85": {
+        "gloss": "pandai",
+        "english": "clever / smart"
+    },
+    "86": {
+        "gloss": "pandai_2",
+        "english": "clever / smart"
+    },
+    "87": {
+        "gloss": "payung",
+        "english": "umbrella"
+    },
+    "88": {
+        "gloss": "pen",
+        "english": "pen"
+    },
+    "89": {
+        "gloss": "pensil",
+        "english": "pencil"
+    },
+    "90": {
+        "gloss": "perempuan",
+        "english": "woman / female"
+    },
+    "91": {
+        "gloss": "pergi",
+        "english": "go"
+    },
+    "92": {
+        "gloss": "pergi_2",
+        "english": "go"
+    },
+    "93": {
+        "gloss": "perlahan",
+        "english": "slow"
+    },
+    "94": {
+        "gloss": "perlahan_2",
+        "english": "slow"
+    },
+    "95": {
+        "gloss": "pinjam",
+        "english": "borrow / lend"
+    },
+    "96": {
+        "gloss": "polis",
+        "english": "police"
+    },
+    "97": {
+        "gloss": "pukul",
+        "english": "hit / strike (also: o'clock)"
+    },
+    "98": {
+        "gloss": "ribut",
+        "english": "storm"
+    },
+    "99": {
+        "gloss": "sampai",
+        "english": "arrive / reach"
+    },
+    "100": {
+        "gloss": "saudara",
+        "english": "relative / sibling"
+    },
+    "101": {
+        "gloss": "saya",
+        "english": "I / me"
+    },
+    "102": {
+        "gloss": "sejuk",
+        "english": "cold"
+    },
+    "103": {
+        "gloss": "sekolah",
+        "english": "school"
+    },
+    "104": {
+        "gloss": "selamat_pagi",
+        "english": "good morning"
+    },
+    "105": {
+        "gloss": "siapa",
+        "english": "who"
+    },
+    "106": {
+        "gloss": "sudah",
+        "english": "already / done"
+    },
+    "107": {
+        "gloss": "suka",
+        "english": "like"
+    },
+    "108": {
+        "gloss": "tandas",
+        "english": "toilet"
+    },
+    "109": {
+        "gloss": "tanya",
+        "english": "ask"
+    },
+    "110": {
+        "gloss": "teh_tarik",
+        "english": "teh tarik (pulled milk tea)"
+    },
+    "111": {
+        "gloss": "teksi",
+        "english": "taxi"
+    },
+    "112": {
+        "gloss": "terima_kasih",
+        "english": "thank you"
+    },
+    "113": {
+        "gloss": "tidur",
+        "english": "sleep"
+    },
+    "114": {
+        "gloss": "tolong",
+        "english": "help"
+    },
+    "115": {
+        "gloss": "tolong_2",
+        "english": "help"
+    },
+    "116": {
+        "gloss": "waalaikumussalam",
+        "english": "and peace be upon you too (greeting reply)"
+    }
+}
