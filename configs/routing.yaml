@@ -1,0 +1,45 @@
+# SignBridge AI recognizer-routing configuration
+#
+# This file describes the intended routing policy.
+# Do NOT use raw softmax confidence to select between separately trained models.
+
+routing:
+  default_domain: general
+  compare_cross_model_confidence: false
+  context_gating: true
+
+  intent_to_domain:
+    SYMPTOM_CHECK: medical
+    SYMPTOM_LOCATION: medical
+    MEDICATION_QUERY: medical
+    ALLERGY_CHECK: medical
+    GENERAL: general
+
+  expected_slot_to_domain:
+    SYMPTOM: medical
+    BODY_LOCATION: medical
+    MEDICATION: medical
+    NUMBER: number
+    TIME_UNIT: general
+    GENERAL: general
+
+  multi_stage:
+    SYMPTOM_DURATION:
+      - slot: NUMBER
+        domain: number
+      - slot: TIME_UNIT
+        domain: general
+
+recognition_intelligence:
+  top_k: 3
+  allow_top_k_context_rerank: true
+  allow_candidate_invention: false
+
+patient_sentence:
+  isolated_sign_capture: true
+  auto_finish_on_inactivity: false
+  require_explicit_finish_sentence: true
+
+safety:
+  critical_information_requires_confirmation: true
+  unsupported_concept_policy: block
