@@ -1,0 +1,122 @@
+{
+  "BODY": [
+    "BADAN"
+  ],
+  "SHOULDER": [
+    "BAHU"
+  ],
+  "NURSE": [
+    "JURURAWAT"
+  ],
+  "FINGER": [
+    "JARI"
+  ],
+  "FOOT": [
+    "KAKI"
+  ],
+  "SKIN": [
+    "KULIT"
+  ],
+  "NECK": [
+    "LEHER"
+  ],
+  "DOCTOR": [
+    "DOKTOR"
+  ],
+  "LIPS": [
+    "BIBIR"
+  ],
+  "TEETH": [
+    "GIGI"
+  ],
+  "NOSE": [
+    "HIDUNG"
+  ],
+  "TONGUE": [
+    "LIDAH"
+  ],
+  "EYES": [
+    "MATA"
+  ],
+  "MOUTH": [
+    "MULUT"
+  ],
+  "WEAK": [
+    "LEMAH"
+  ],
+  "BONE": [
+    "TULANG"
+  ],
+  "X_RAY": [
+    "SINAR_X"
+  ],
+  "RIB_CAGE": [
+    "TULANG_RUSUK"
+  ],
+  "BLOOD": [
+    "DARAH"
+  ],
+  "HEART": [
+    "JANTUNG"
+  ],
+  "PAIN": [
+    "KESAKITAN"
+  ],
+  "KIDNEY": [
+    "BUAH_PINGGANG"
+  ],
+  "ASTHMA": [
+    "ASMA"
+  ],
+  "COUGH": [
+    "BATUK"
+  ],
+  "SWOLLEN": [
+    "BENGKAK"
+  ],
+  "ITCHY": [
+    "GATAL_GATAL"
+  ],
+  "VOMIT": [
+    "MUNTAH"
+  ],
+  "FLU": [
+    "SELESEMA"
+  ],
+  "FEVER": [
+    "DEMAM"
+  ],
+  "HEADACHE": [
+    "SAKIT_KEPALA"
+  ],
+  "STOMACH_PAIN": [
+    "SAKIT_PERUT"
+  ],
+  "WAIST_PAIN": [
+    "SAKIT_PINGGANG"
+  ],
+  "SORE_THROAT": [
+    "SAKIT_TEKAK"
+  ],
+  "SURGERY": [
+    "BEDAH"
+  ],
+  "EMERGENCY": [
+    "KECEMASAN"
+  ],
+  "CREAM": [
+    "KRIM"
+  ],
+  "PILL": [
+    "PIL"
+  ],
+  "PREGNANT": [
+    "MENGANDUNG"
+  ],
+  "TIRED": [
+    "PENAT"
+  ],
+  "STOMACH": [
+    "PERUT"
+  ]
+}
