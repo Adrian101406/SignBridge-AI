@@ -1,0 +1,50 @@
+[project]
+name = "signbridge-ai-rebuild"
+version = "0.1.0"
+description = "Offline SignBridge AI system integration"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "accelerate==1.8.1",
+    "bitsandbytes==0.46.1",
+    "fastapi==0.115.12",
+    "huggingface-hub==0.33.4",
+    "keras==3.13.2",
+    "librosa==0.11.0",
+    "llama-cpp-python==0.3.35",
+    "mediapipe==1.0.1",
+    "numpy==1.26.4",
+    "opencv-python==4.11.0.86",
+    "python-multipart==0.0.20",
+    "silero-vad==5.1.2",
+    "soundfile==0.13.1",
+    "tensorflow==2.20.0",
+    "torch==2.7.1",
+    "torchaudio==2.7.1",
+    "transformers==4.53.3",
+    "uvicorn[standard]==0.34.3",
+]
+
+[dependency-groups]
+dev = [
+    "httpx==0.28.1",
+    "pytest==8.4.1",
+]
+
+[tool.uv.sources]
+torch = { index = "pytorch" }
+torchaudio = { index = "pytorch" }
+
+[[tool.uv.index]]
+url = "https://abetlen.github.io/llama-cpp-python/whl/cpu"
+
+[[tool.uv.index]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = [
+    "ignore:.*tf.lite.Interpreter is deprecated.*:UserWarning",
+    "ignore:The anyio.abc.BlockingPortal alias is deprecated.*:DeprecationWarning",
+]
