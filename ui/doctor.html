@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en" data-page="doctor">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SignBridge AI — Doctor</title>
+  <link rel="stylesheet" href="css/styles.css?v=20">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <div class="doctor-brand">
+        <h1>SignBridge <span>AI</span></h1>
+        <p class="eyebrow doctor-display-label">Doctor display</p>
+      </div>
+      <div class="topbar-status" aria-label="System status">
+        <span id="microphone-status-chip" class="status-chip" data-tone="neutral">Microphone Ready</span>
+        <span id="doctor-session-status-chip" class="status-chip" data-tone="neutral">Patient not connected</span>
+      </div>
+    </header>
+
+    <section class="workspace-grid doctor-workspace" aria-label="Doctor communication workspace">
+      <div class="column-stack doctor-left-column">
+        <section class="panel conversation-panel" aria-labelledby="doctor-conversation-heading">
+          <div class="panel-heading compact-heading">
+            <div>
+              <p class="eyebrow">Confirmed messages only</p>
+              <h2 id="doctor-conversation-heading">Conversation</h2>
+            </div>
+          </div>
+          <ol id="conversation-log" class="conversation-log" aria-live="polite">
+            <li class="empty-state">The confirmed conversation will appear here.</li>
+          </ol>
+          <div class="button-row conversation-actions">
+            <button id="save-conversation-history" class="button button-secondary" type="button" disabled>Save history</button>
+            <button id="clear-conversation" class="button button-quiet danger-text" type="button" disabled>Clear conversation</button>
+          </div>
+        </section>
+
+        <section class="panel voice-panel" aria-labelledby="voice-heading">
+          <div class="panel-heading compact-heading">
+            <div>
+              <p class="eyebrow">Voice input</p>
+              <h2 id="voice-heading">Doctor microphone</h2>
+            </div>
+          </div>
+          <div id="audio-visualizer" class="audio-visualizer" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <p id="recording-status" class="inline-status" aria-live="polite">Ready to record.</p>
+          <div class="button-row voice-actions">
+            <button id="record-start" class="button button-primary" type="button">Start recording</button>
+            <button id="record-stop" class="button button-secondary" type="button" disabled>Stop</button>
+          </div>
+        </section>
+      </div>
+
+      <div class="column-stack doctor-right-column">
+        <section class="panel doctor-review-panel" aria-label="Doctor message review workflow">
+          <div class="review-step asr-review-step">
+            <div class="step-heading">
+              <span class="step-number">1</span>
+              <div>
+                <p class="eyebrow">Speech recognition</p>
+                <h2>Original ASR transcript</h2>
+              </div>
+            </div>
+            <label id="transcript-heading" for="original-transcript">Original ASR transcript</label>
+            <textarea id="original-transcript" rows="3" readonly placeholder="Original speech recognition text will remain visible here."></textarea>
+          </div>
+
+          <div class="review-step intelligence-review-step">
+            <div class="step-heading">
+              <span class="step-number">2</span>
+              <div>
+                <p class="eyebrow">Review only</p>
+                <h2 id="medical-review-heading">Medical intelligence suggestion</h2>
+              </div>
+              <span id="medical-status-chip" class="status-chip push-right" data-tone="neutral">Ready</span>
+            </div>
+            <div id="medical-review" class="review-content" aria-live="polite">
+              No medical suggestion is available. Your draft will not be changed automatically.
+            </div>
+          </div>
+
+          <div class="review-step final-review-step">
+            <div class="step-heading">
+              <span class="step-number">3</span>
+              <div>
+                <p class="eyebrow">Confirm before sending</p>
+                <h2>Editable doctor message</h2>
+              </div>
+              <span class="privacy-note push-right">Not sent yet</span>
+            </div>
+            <label class="sr-only" for="doctor-draft">Editable doctor message</label>
+            <textarea id="doctor-draft" rows="4" placeholder="Review and edit the final message before sending."></textarea>
+            <div class="button-row doctor-confirm-actions">
+              <button id="cancel-doctor-draft" class="button button-quiet danger-text" type="button">Try again</button>
+              <button id="confirm-doctor-message" class="button button-primary push-right" type="button" disabled>Confirm &amp; send</button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+  <script type="module" src="js/doctor-ui.js?v=8"></script>
+</body>
+</html>

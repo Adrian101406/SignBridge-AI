@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en" data-page="patient">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SignBridge AI — Patient</title>
+    <link rel="stylesheet" href="css/styles.css?v=24">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <div class="patient-brand">
+        <h1>SignBridge <span>AI</span></h1>
+        <p class="eyebrow patient-display-label">Patient display</p>
+      </div>
+      <div class="topbar-status" aria-label="System status">
+        <span id="camera-status-chip" class="status-chip" data-tone="neutral">Camera Off</span>
+        <span id="session-status-chip" class="status-chip" data-tone="neutral">Doctor not connected</span>
+      </div>
+    </header>
+
+    <section class="workspace-grid patient-workspace" aria-label="Patient communication workspace">
+      <div class="column-stack patient-camera-column">
+        <section class="panel camera-panel" aria-labelledby="camera-heading">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">Live input</p>
+              <h2 id="camera-heading">Camera preview</h2>
+            </div>
+            <div class="camera-source-actions">
+              <button id="camera-toggle" class="button button-secondary" type="button">Open camera</button>
+              <button id="video-upload-button" class="button button-secondary" type="button">Upload video</button>
+              <input id="video-upload" class="visually-hidden" type="file" accept="video/mp4,video/webm">
+            </div>
+          </div>
+          <div class="camera-stage">
+            <video id="camera-preview" aria-label="Patient camera preview" autoplay muted playsinline></video>
+            <div class="camera-empty" aria-hidden="true">
+              <span class="camera-icon">◎</span>
+              <strong>Camera is off</strong>
+              <small>Open the camera when you are ready to sign.</small>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel recognition-panel" aria-labelledby="recognition-heading">
+          <div class="recognition-summary">
+            <div>
+              <p class="eyebrow">Current detection</p>
+              <strong id="current-detection" class="detected-word">—</strong>
+            </div>
+            <div class="confidence-block">
+              <span>Confidence</span>
+              <strong id="recognition-confidence">—</strong>
+            </div>
+          </div>
+          <p id="recognition-status" class="inline-status" aria-live="polite">Recognition is stopped.</p>
+          <div class="recognition-mode-row">
+            <span>Recognition mode: <strong id="recognition-mode">Medical + General</strong></span>
+            <button id="recognition-number-mode" class="button button-secondary" type="button" aria-pressed="false">Number</button>
+          </div>
+          <div id="recognition-decision-actions" class="button-row recognition-decision-actions" hidden>
+            <button id="confirm-recognition" class="button button-primary" type="button">Confirm</button>
+            <button id="retry-recognition" class="button button-secondary" type="button">Try again</button>
+          </div>
+          <div class="button-row recognition-actions">
+            <button id="recognition-start" class="button button-primary" type="button">Start recognition</button>
+            <button id="recognition-stop" class="button button-secondary" type="button" disabled>Stop</button>
+          </div>
+        </section>
+      </div>
+
+      <div class="column-stack patient-right-column">
+        <section class="panel sentence-panel" aria-labelledby="sentence-heading">
+          <div class="panel-heading compact-heading">
+            <div>
+              <p class="eyebrow">Build your message</p>
+              <h2 id="sentence-heading">Your sentence</h2>
+            </div>
+            <span class="privacy-note">Not sent yet</span>
+          </div>
+          <p id="patient-original-bim" class="source-note" aria-live="polite" hidden></p>
+          <label class="sr-only" for="patient-draft">Editable patient sentence</label>
+          <textarea id="patient-draft" rows="3" placeholder="Recognised words will appear here. You can edit them before sending."></textarea>
+          <p id="patient-generation-status" class="source-note" aria-live="polite" hidden></p>
+          <div id="touch-keyboard" hidden></div>
+          <button id="keyboard-toggle" class="keyboard-fab" type="button" aria-label="Open touch keyboard" aria-controls="touch-keyboard" aria-expanded="false">⌨</button>
+          <div class="button-row sentence-actions">
+            <button id="undo-word" class="button button-quiet" type="button">Undo last word</button>
+            <button id="clear-draft" class="button button-quiet danger-text" type="button">Clear</button>
+            <div class="sentence-send-actions push-right">
+              <button id="direct-send-patient-message" class="button button-secondary" type="button" disabled>Direct send</button>
+              <button id="send-patient-message" class="button button-primary" type="button" disabled>Generate sentence</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel conversation-panel" aria-labelledby="conversation-heading">
+          <div class="panel-heading compact-heading">
+            <div>
+              <p class="eyebrow">Confirmed messages only</p>
+              <h2 id="conversation-heading">Conversation</h2>
+            </div>
+          </div>
+          <ol id="conversation-log" class="conversation-log" aria-live="polite">
+            <li class="empty-state">Your conversation with the doctor will appear here.</li>
+          </ol>
+        </section>
+
+        <section id="avatar-placeholder" class="panel avatar-panel" aria-labelledby="avatar-heading">
+          <div class="avatar-visual">
+            <video id="avatar-video" src="assets/avatar/fever-duration.mp4" muted playsinline preload="metadata" aria-label="Doctor fever-duration sign avatar" hidden></video>
+            <span id="avatar-empty" aria-hidden="true">Avatar</span>
+          </div>
+          <div class="avatar-copy">
+            <p class="eyebrow">Doctor question</p>
+            <h2 id="avatar-heading">MSL avatar video</h2>
+            <p id="avatar-status" aria-live="polite">Waiting for a supported doctor question.</p>
+          </div>
+          <div class="avatar-actions">
+            <button id="play-avatar-video" class="button button-secondary" type="button" disabled>Replay avatar</button>
+            <button id="play-doctor-reply" class="button button-secondary" type="button" disabled>Play doctor reply</button>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+    <script type="module" src="js/patient-ui.js?v=27"></script>
+</body>
+</html>
