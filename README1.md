@@ -25,7 +25,6 @@ The project combines **computer vision, deep learning, automatic speech recognit
 - [Medical Context Interpretation Engine](#medical-context-interpretation-engine)
 - [Text-to-BIM](#text-to-bim)
 - [User Interface](#user-interface)
-- [Repository Structure](#repository-structure)
 - [Installation](#installation)
 - [Running the Prototype](#running-the-prototype)
 - [Datasets](#datasets)
