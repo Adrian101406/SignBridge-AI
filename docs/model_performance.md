@@ -4,40 +4,79 @@ This document records currently available development / controlled benchmark res
 
 > **Important:** These results come from different datasets and test conditions. They must **not** be combined into a single end-to-end SignBridge accuracy value.
 
-## 1. Medical BIM Recognizer V2
+## 1. Recognizers
 
-External development benchmark reported for the current Medical V2 recognizer:
+The current recognizers were evaluated independently because each model performs a different classification task.
 
-| Metric | Result |
-|---|---:|
-| Top-1 | 13 / 30 = **43.33%** |
-| Top-3 | 20 / 30 = **66.67%** |
+| Recognizer | Accuracy | Macro Precision | Macro Recall | Macro F1 |
+|---|---:|---:|---:|---:|
+| Medical BIM | 68.75% | 0.712 | 0.688 | 0.680 |
+| General BIM | 88.46% | 0.890 | 0.890 | 0.880 |
+| Number | 99.83% | 0.998 | 0.998 | 0.998 |
 
-These figures describe the Medical V2 external development benchmark only. They are not end-to-end system accuracy and are not a clinical performance claim.
+These results should **not be interpreted as direct comparisons between models**, because:
 
-The recognizer returns Top-K candidates, confidence margin, quality information, and a recognizer-level decision such as `ACCEPT`, `CONFIRM`, or `VERIFY`.
-
----
-
-## 2. General BIM Recognizer V1
-
-The General V1 recognizer supports **117 classes** and uses a 64-frame pose-and-hand landmark sequence.
-
-A final comparable held-out performance figure has not been documented here. Do not invent a value; add the teammate's verified benchmark when available.
+- the models contain different numbers of classes,
+- they use different datasets,
+- class distributions may differ,
+- evaluation sets are different.
 
 ---
 
-## 3. Number BIM Recognizer V1
+## Medical Recognizer Evaluation
 
-The Number V1 recognizer is a static isolated-sign classifier for BIM numbers **0–10**.
+The Medical BIM Recognizer has been evaluated under more than one testing condition.
 
-A final comparable held-out performance figure has not been documented here. Add the verified benchmark when available.
+### Original Untouched Test Set
 
-Because it is a closed 11-class classifier, it should only be activated when conversation context expects a number.
+```text
+Accuracy:        68.75%
+Macro Precision: 0.712
+Macro Recall:    0.688
+Macro F1:        0.680
+```
+
+### External Development Benchmark
+
+```text
+Top-1 Accuracy: 43.33%
+Top-3 Accuracy: 66.67%
+```
+
+The lower external benchmark performance demonstrates that real-world generalization remains challenging.
+
+This also highlights the importance of evaluating sign-language models on data collected under different conditions rather than relying only on internal test accuracy.
 
 ---
 
-## 4. Speech Recognition (Controlled Benchmark)
+## General Recognizer Evaluation
+
+```text
+Accuracy:        88.46%
+Macro Precision: 0.890
+Macro Recall:    0.890
+Macro F1:        0.880
+```
+
+---
+
+## Number Recognizer Evaluation
+
+```text
+Accuracy:        99.83%
+Macro Precision: 0.998
+Macro Recall:    0.998
+Macro F1:        0.998
+```
+
+Detailed evaluation information should be maintained in:
+
+```text
+docs/model_performance.md
+```
+
+---
+## 2. Speech Recognition (Controlled Benchmark)
 
 Controlled ASR benchmark:
 
@@ -51,7 +90,7 @@ These results were obtained from a small controlled recording benchmark and shou
 
 ---
 
-## 5. MCIE AI V2 (Controlled / Development Benchmark)
+## 3. MCIE AI V2 (Controlled / Development Benchmark)
 
 | Metric | Result |
 |---|---:|
@@ -66,7 +105,7 @@ The main observed gap was medical-concept extraction/validation in two test case
 
 ---
 
-## 6. Recognition Intelligence Tests
+## 4. Recognition Intelligence Tests
 
 The context-aware Recognition Intelligence logic behaved as expected on all **8 controlled benchmark cases** used during development.
 
@@ -74,7 +113,7 @@ This means the routing/reranking/safety logic produced the expected software beh
 
 ---
 
-## 7. End-to-End Evaluation Status
+## 5. End-to-End Evaluation Status
 
 The following should remain separate from controlled component benchmarks until real integrated testing is completed:
 
@@ -97,7 +136,7 @@ When these tests are performed, record:
 
 ---
 
-## 8. Reporting Rule
+## 6. Reporting Rule
 
 Use component-specific language when presenting results.
 
