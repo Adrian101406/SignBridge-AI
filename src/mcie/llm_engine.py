@@ -1,3 +1,13 @@
+# External model:
+# Qwen/Qwen3-4B-Instruct-2507
+# https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
+#
+# Loaded using Hugging Face Transformers.
+# Optional 4-bit quantization uses bitsandbytes.
+#
+# SignBridge-specific prompting, validation, rule integration,
+# safety logic, and output processing are team-developed.
+
 from __future__ import annotations
 
 import json
