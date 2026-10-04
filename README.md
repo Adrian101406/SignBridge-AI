@@ -903,22 +903,18 @@ Always cite the original dataset publications or repository records separately.
 
 # License
 
-The licence for this project should be specified in the root:
+The source code developed specifically for SignBridge AI is released under
+the MIT License. See the [license](license) file for details.
 
-```text
-LICENSE
-```
+This license applies only to original SignBridge AI source code.
 
-Before selecting a licence, ensure that it is compatible with the licences and usage conditions of:
+External datasets, pretrained models, libraries, BIM media assets, and
+third-party resources remain subject to their respective licenses and terms
+of use.
 
-- training datasets,
-- pretrained models,
-- third-party software,
-- external assets.
-
-External datasets and third-party models remain subject to their respective licences.
-
----
+In particular, the datasets obtained from Kaggle and Zenodo are not
+relicensed by this repository. Users must follow the terms specified by the
+original dataset providers.
 
 # Disclaimer
 
