@@ -640,7 +640,7 @@ Used in:
 
 The pretrained model is not redistributed in this repository.
 
-### MCIE
+### QWEN
 The Medical Conversation Intelligence Engine uses the following
 open-source technologies:
 
@@ -653,6 +653,13 @@ All SignBridge-specific MCIE logic, including conversation state,
 rule-based semantic anchoring, controlled medical mappings,
 evidence validation, recognizer-context processing, and
 ACCEPT / CONFIRM / RETRY safety logic, was developed by the team.
+
+### MediaPipe
+Used for pose, hand, and facial landmark extraction in BIM recognition.
+
+- Provider: Google
+- Framework: MediaPipe Tasks
+- Purpose: Video → landmark representation
 
 # Testing
 
