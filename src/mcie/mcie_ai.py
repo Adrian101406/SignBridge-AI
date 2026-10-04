@@ -1,3 +1,20 @@
+"""
+SignBridge AI - Medical Conversation Intelligence Engine (MCIE)
+
+Developed by Team Silence Love for Project Nexus 2026.
+
+External AI model:
+Qwen/Qwen3-4B-Instruct-2507
+https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
+
+Model inference implemented using Hugging Face Transformers
+and PyTorch.
+
+The MCIE logic, rule-based semantic processing, conversation
+state management, evidence validation, and safety mechanisms
+were developed by the SignBridge AI team.
+"""
+
 from __future__ import annotations
 
 from typing import TYPE_CHECKING, Any, Dict, List, Optional, Set
