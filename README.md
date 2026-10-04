@@ -419,43 +419,70 @@ The UI is intended as a **prototype assistive interface**, not a replacement for
 
 # Installation
 
-## 1. Clone the repository
+### Prerequisites
+
+Make sure the following are installed on your system:
+
+- Python
+- Git
+- [uv](https://docs.astral.sh/uv/) — recommended for dependency management
+
+### 1. Clone the Repository
 
 ```bash
 git clone <YOUR-GITHUB-REPOSITORY-URL>
 cd <YOUR-REPOSITORY-NAME>
 ```
 
----
+### 2. Install Dependencies
 
-## 2. Create a virtual environment
+This project uses `pyproject.toml` and `uv.lock` for dependency management.
 
-Using Python `venv`:
+#### Recommended: Using uv
+
+Install `uv` if you do not already have it:
+
+```bash
+pip install uv
+```
+
+Then install the project dependencies:
+
+```bash
+uv sync
+```
+
+This will create a virtual environment and install the dependencies defined by the project.
+
+### Alternative: Using pip
+
+If you prefer not to use `uv`, create a virtual environment manually.
+
+On Windows:
 
 ```bash
 python -m venv .venv
-```
-
-### Windows
-
-```bash
 .venv\Scripts\activate
 ```
 
-### macOS / Linux
+On macOS/Linux:
 
 ```bash
+python3 -m venv .venv
 source .venv/bin/activate
 ```
 
----
-
-## 3. Install dependencies
+Then install the project and its dependencies:
 
 ```bash
-pip install --upgrade pip
-pip install -r requirements.txt
+pip install -e .
 ```
+
+### 3. Verify the Installation
+
+After installation, make sure the virtual environment is active and that all required dependencies have been installed successfully.
+
+> **Note:** A `requirements.txt` file is not required because the project's dependencies are managed through `pyproject.toml` and `uv.lock`.
 
 ---
 
