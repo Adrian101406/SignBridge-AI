@@ -29,7 +29,6 @@ The project combines **computer vision, deep learning, automatic speech recognit
 - [Installation](#installation)
 - [Running the Prototype](#running-the-prototype)
 - [Datasets](#datasets)
-- [Model Performance](#model-performance)
 - [Testing](#testing)
 - [Known Limitations](#known-limitations)
 - [Future Improvements](#future-improvements)
@@ -855,24 +854,19 @@ SignBridge AI was developed as a collaborative project involving work across:
 
 ### Project Team
 
-Add team members here:
+Team Silence Love
+Universiti Teknologi PETRONAS
+Project Nexus 2026
+
+Team members :
 
 ```text
-Name — Role
-Name — Role
-Name — Role
-Name — Role
+Tong Zi Yi
+Alden Ting Tiew Hui
+Adrian Wong Chee Yuen
+Tee Quan Sheng
 ```
 
-Example:
-
-```text
-Adrian Wong — [Project Role]
-Team Member — [Project Role]
-Team Member — [Project Role]
-```
-
----
 
 # Acknowledgements
 
