@@ -28,6 +28,7 @@ The project combines **computer vision, deep learning, automatic speech recognit
 - [Installation](#installation)
 - [Running the Prototype](#running-the-prototype)
 - [Datasets](#datasets)
+- [External Models and Dependencies](#external-model-and-dependencies)
 - [Testing](#testing)
 - [Known Limitations](#known-limitations)
 - [Future Improvements](#future-improvements)
@@ -597,6 +598,34 @@ For academic reports, publications, competitions, or demonstrations, the origina
 
 ---
 
+## External Models and Dependencies
+
+### Malaysian Whisper Small v3
+Used for Malay/English automatic speech recognition.
+
+Source:
+- Model/repository: Malaysian Whisper Small v3
+- Provider: Mesolitica
+- Model ID: `mesolitica/malaysian-whisper-small-v3`
+
+Used in:
+`src/speech_to_text/`
+
+The pretrained model is not redistributed in this repository.
+
+### MCIE
+The Medical Conversation Intelligence Engine uses the following
+open-source technologies:
+
+- Qwen3-4B-Instruct-2507 — Qwen Team
+- Hugging Face Transformers
+- PyTorch
+- bitsandbytes (for optional 4-bit quantization)
+
+All SignBridge-specific MCIE logic, including conversation state,
+rule-based semantic anchoring, controlled medical mappings,
+evidence validation, recognizer-context processing, and
+ACCEPT / CONFIRM / RETRY safety logic, was developed by the team.
 
 # Testing
 
