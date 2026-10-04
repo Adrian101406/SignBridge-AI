@@ -933,7 +933,7 @@ Always cite the original dataset publications or repository records separately.
 # License
 
 The source code developed specifically for SignBridge AI is released under
-the MIT License. See the [license](license) file for details.
+the MIT License. See the [LICENSE](LICENSE) file for details.
 
 This license applies only to original SignBridge AI source code.
 
