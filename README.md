@@ -598,22 +598,29 @@ Please refer to the Zenodo record for the dataset licence and citation requireme
 
 ## Number Dataset
 
-The Number Recognizer uses numerical BIM training data prepared for numerical gesture recognition.
+The Number Recognizer was developed using the **Malaysian Sign Language (MSL) Image Dataset** available on Kaggle.
 
-Details regarding:
+- **Source:** Kaggle
+- **Dataset:** Malaysian Sign Language (MSL) Image Dataset
+- **Kaggle identifier:** `pradeepisawasan/malaysian-sign-language-msl-image-dataset`
+- **Purpose in SignBridge:** Training and evaluation of the BIM number recognizer.
 
-- dataset source,
-- number of samples,
-- preprocessing procedure,
-- train/validation/test split,
+The dataset can be downloaded using `kagglehub`:
 
-should be documented in:
+```python
+import kagglehub
 
-```text
-src/bim_recognition/number/README.md
+# Download latest version
+path = kagglehub.dataset_download(
+    "pradeepisawasan/malaysian-sign-language-msl-image-dataset"
+)
+
+print("Path to dataset files:", path)
 ```
 
----
+The dataset is downloaded to the local KaggleHub cache directory. The exact storage path may vary depending on the operating system and environment.
+
+> **Note:** The original dataset is provided by its respective creator on Kaggle. SignBridge does not claim ownership of the source dataset and uses it for model development and research purposes.
 
 # Dataset Attribution
 
